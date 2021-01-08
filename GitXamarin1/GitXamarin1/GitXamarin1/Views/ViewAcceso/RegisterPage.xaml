@@ -55,6 +55,7 @@
                                     <x:String>USA</x:String>
                                     <x:String>Canada</x:String>
                                     <x:String>Mexico</x:String>
+                                    <x:String>Chile</x:String>
                                 </x:Array>
                             </Picker.ItemsSource>
                         </Picker>
