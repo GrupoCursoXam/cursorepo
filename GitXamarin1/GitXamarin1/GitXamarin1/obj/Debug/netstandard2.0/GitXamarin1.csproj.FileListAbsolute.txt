@@ -1,0 +1,17 @@
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\bin\Debug\netstandard2.0\GitXamarin1.deps.json
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\bin\Debug\netstandard2.0\GitXamarin1.dll
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\bin\Debug\netstandard2.0\ref\GitXamarin1.dll
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\bin\Debug\netstandard2.0\GitXamarin1.pdb
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.csprojAssemblyReference.cache
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\Views\ViewAcceso\LoginPage.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\Views\ViewAcceso\RegisterPage.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\Views\ViewAcceso\StartPage.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.AssemblyInfoInputs.cache
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.AssemblyInfo.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.csproj.CoreCompileInputs.cache
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.dll
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\ref\GitXamarin1.dll
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.pdb
