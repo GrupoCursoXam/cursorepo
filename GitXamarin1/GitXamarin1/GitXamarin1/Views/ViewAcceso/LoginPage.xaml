@@ -3,10 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GitXamarin1.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Ingrese sus credenciales"
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <Grid RowSpacing="25">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                    <Label Text="Bienvenido nuevamente" TextColor="#B4995D" FontSize="18" WidthRequest="300" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                    <Label Text="Ingrese para continuar" TextColor="Gray" FontSize="13" WidthRequest="300" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="email@com.com" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Email"
+                               HorizontalTextAlignment="Start" MaxLength="40" Text="{Binding EmailTxt, Mode=TwoWay}" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="4" HorizontalOptions="Center">
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="password" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" IsPassword="True"
+                               HorizontalTextAlignment="Start" MaxLength="10" Text="{Binding PaswordTxt, Mode=TwoWay}" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Horizontal">
+                    <CheckBox HorizontalOptions="Start" VerticalOptions="Center" Color="#767677"/>
+                    <Label Text="Recordarme" TextColor="#767677" FontSize="13" WidthRequest="300" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Image WidthRequest="15"/>
+                    <Button Text="Olvido contraseña?" TextColor="#B4995D" WidthRequest="150" HeightRequest="50" FontSize="11" 
+                            BackgroundColor="Transparent" FontAttributes="Bold" VerticalOptions="Start" HorizontalOptions="Center"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical" VerticalOptions="Start" >
+                    
+                    <Frame HasShadow="True"  Padding="0,2,0,2">
+                        <Button Text="Login" HeightRequest="35" TextColor="#B4995D"  
+                                BackgroundColor="White" FontSize="12" FontAttributes="Bold" Command="{Binding LoginCommand}"/>
+                    </Frame>
+
+                    <Button Text="Nueva cuenta" HeightRequest="35" WidthRequest="300" TextColor="#B4995D" BackgroundColor="White" FontSize="12"/>
+                </StackLayout>
+
+            </Grid>
+
+
+            <!--<Label Text="Registre sus datos."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" />-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

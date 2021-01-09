@@ -15,6 +15,8 @@ namespace GitXamarin1
         public LoginPage()
         {
             InitializeComponent();
+           // BindingContext = new LoginViewModel();
+
         }
     }
 }
