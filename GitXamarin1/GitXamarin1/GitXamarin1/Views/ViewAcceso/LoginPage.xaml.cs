@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitXamarin1.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,9 @@ namespace GitXamarin1
         public LoginPage()
         {
             InitializeComponent();
-           // BindingContext = new LoginViewModel();
-
+            //Telling class binding properties
+            BindingContext = new LoginViewModel();
+            
         }
     }
 }
