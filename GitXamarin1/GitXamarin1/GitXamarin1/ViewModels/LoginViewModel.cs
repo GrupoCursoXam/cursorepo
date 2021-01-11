@@ -13,17 +13,17 @@ namespace GitXamarin1.ViewModels
     class LoginViewModel : BaseViewModel
     {
         #region Attributes
-        private string email;
-        private string password;
+        public string email;
+        public string password;
         #endregion
 
         #region Properties
-        public string EmailTxt
+        private string EmailTxt
         {
             get { return this.email; }
             set { SetValue(ref this.email, value); }
         }
-        public string PaswordTxt
+        private string PaswordTxt
         {
             get { return this.password; }
             set { SetValue(ref this.password, value); }
