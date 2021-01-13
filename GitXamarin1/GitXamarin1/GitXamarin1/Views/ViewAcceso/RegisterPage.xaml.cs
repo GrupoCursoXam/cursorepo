@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitXamarin1.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace GitXamarin1.Views.ViewAcceso
         public RegisterPage()
         {
             InitializeComponent();
+            BindingContext = new RegisterViewModel();
         }
 
         private void Volver_clicked(object sender, EventArgs e)
