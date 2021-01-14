@@ -11,46 +11,46 @@ namespace GitXamarin1.ViewModels
     class RegisterViewModel : BaseViewModel
     {
         #region Attributes
-        public string email;
-        public string password;
-        public string firstName;
-        public string lastName;
-        public string age;
-        public string country;
+        private string email;
+        private string password;
+        private string firstName;
+        private string lastName;
+        private string age;
+        private string country;
 
         #endregion
 
         #region Properties
-        private string EmailTxt{
+        public string EmailTxt{
             get { return this.email; }
 
             set { SetValue(ref this.email, value); }
         }
-        private string PasswordTxt
+        public string PasswordTxt
         {
             get { return this.password; }
 
             set { SetValue(ref this.password, value); }
         }
-        private string FirstNameTxt
+        public string FirstNameTxt
         {
             get { return this.firstName; }
 
             set { SetValue(ref this.firstName, value); }
         }
-        private string LastNameTxt
+        public string LastNameTxt
         {
             get { return this.lastName; }
 
             set { SetValue(ref this.lastName, value); }
         }
-        private string AgeTxt
+        public string AgeTxt
         {
             get { return this.age; }
 
             set { SetValue(ref this.age, value); }
         }
-        private string CountryTxt
+        public string CountryTxt
         {
             get { return this.country; }
 
@@ -90,8 +90,9 @@ namespace GitXamarin1.ViewModels
             var user = new Users
             {
                 Email = EmailTxt.ToLower(),
-                FirsName = EmailTxt.ToLower(),
+                FirsName = FirstNameTxt.ToLower(),
                 LastName = LastNameTxt.ToLower(),
+                Password = PasswordTxt.ToLower(),
                 Age = AgeTxt.ToLower(),
                 Country = CountryTxt.ToLower(),
                 CreationDate = DateTime.UtcNow.Date

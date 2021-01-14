@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GitXamarin1.Views.ViewAcceso.RegisterPage">
     <ContentPage.Content>
+       
         <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-            <Grid RowSpacing="25">
+            <ScrollView x:Name="scroller"
+            Orientation="Vertical"
+            
+            Grid.Row="0" Grid.Column="1"
+            Grid.RowSpan="10" Grid.ColumnSpan="5">
+                <Grid RowSpacing="25">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25"/>
                     <RowDefinition Height="Auto"/>
@@ -55,7 +61,7 @@
                     </Frame>
                     <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
                         <Picker WidthRequest="134" HeightRequest="123" Title="pais" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" 
-                               HorizontalTextAlignment="Start" ItemDisplayBinding="{Binding CountryTxt, Mode=TwoWay}">
+                               HorizontalTextAlignment="Start" SelectedItem="{Binding CountryTxt}">
                             <Picker.ItemsSource>
                                 <x:Array Type="{x:Type x:String}">
                                     <x:String>USA</x:String>
@@ -67,7 +73,7 @@
                         </Picker>
                     </Frame>
                 </StackLayout>
-                <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical">
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical">
                     <Frame HasShadow="True" HeightRequest="45" Padding="0,4,0,4">
                         <Button Text="Aceptar" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsEnabled}"/>
                     </Frame>
@@ -76,13 +82,15 @@
                     </Frame>
                     <ActivityIndicator Color="#B4995D" IsRunning="{Binding IsRunning}" IsVisible="{Binding IsVisible}"></ActivityIndicator>
                 </StackLayout>
-                
+               
             </Grid>
             
             
             <!--<Label Text="Registre sus datos."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
+            </ScrollView>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
