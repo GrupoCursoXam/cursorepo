@@ -32,6 +32,9 @@
                     <Frame Padding="0,4,0,4" HasShadow="True">
                         <Button Text="Tienes cuenta?" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="LoginNav_clicked"/>
                     </Frame>
+                    <Frame Padding="0,4,0,4" HasShadow="True">
+                        <Button Text="Tareas" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="TaskNav_clicked"/>
+                    </Frame>
                 </StackLayout>
                 
                 <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="4">

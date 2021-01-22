@@ -15,3 +15,5 @@ C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamari
 C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.dll
 C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\ref\GitXamarin1.dll
 C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\GitXamarin1.pdb
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\Views\ViewFunc\AddTasks.xaml.g.cs
+C:\Users\aldol\Documents\desarrollo\xamarinCurso\cursorepo\GitXamarin1\GitXamarin1\GitXamarin1\obj\Debug\netstandard2.0\Views\ViewFunc\ViewTasks.xaml.g.cs

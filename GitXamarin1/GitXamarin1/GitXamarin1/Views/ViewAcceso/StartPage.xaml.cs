@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitXamarin1.Views.ViewFunc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,11 @@ namespace GitXamarin1.Views.ViewAcceso
         private void LoginNav_clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new LoginPage());
+        }
+
+        private void TaskNav_clicked(object sender, EventArgs e)
+        {
+           Navigation.PushAsync(new ViewTasks());
         }
     }
 }

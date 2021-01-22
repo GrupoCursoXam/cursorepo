@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitXamarin1.Views.ViewFunc.AddTasks">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView x:Name="scroller"
+            Orientation="Vertical"
+            
+            Grid.Row="0" Grid.Column="1"
+            Grid.RowSpan="10" Grid.ColumnSpan="5">
+                <Grid RowSpacing="25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                        <Label Text="Registre tarea" TextColor="#B4995D" FontSize="18" WidthRequest="300" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                        <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                            <Entry WidthRequest="275" HeightRequest="50" Placeholder="descripcion" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
+                               HorizontalTextAlignment="Start" MaxLength="20" Text="{Binding TaskNameTxt, Mode=TwoWay}"/>
+                        </Frame>
+                    </StackLayout>
+                    
+                    <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical">
+                        <Frame HasShadow="True" HeightRequest="45" Padding="0,4,0,4">
+                            <Button Text="Aceptar" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsEnabled}"/>
+                        </Frame>
+                        <Frame HasShadow="True" HeightRequest="45" Padding="0,4,0,4">
+                            <Button Text="Volver" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Clicked="Volver_clicked"/>
+                        </Frame>
+                        <ActivityIndicator Color="#B4995D" IsRunning="{Binding IsRunning}" IsVisible="{Binding IsVisible}"></ActivityIndicator>
+                    </StackLayout>
+
+                </Grid>
+
+
+                <!--<Label Text="Registre sus datos."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitXamarin1.Views.ViewFunc.ViewTasks">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <ScrollView x:Name="scroller"
+            Orientation="Vertical"
+            
+            Grid.Row="0" Grid.Column="1"
+            Grid.RowSpan="2" Grid.ColumnSpan="5">
+                <Grid RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="1" HorizontalOptions="Center" WidthRequest="350">
+                        <Frame Padding="0" VerticalOptions="Center" HasShadow="true">
+                            <ListView ItemsSource="{Binding ListViewSource}"
+                                      HasUnevenRows="True"
+                                      x:Name="ListViewName"
+                                      ItemSelected="ListViewName_ItemSelected"
+                                      IsPullToRefreshEnabled="{Binding IsRefreshingTxt}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="60"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="50"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                                    <CheckBox Color="CadetBlue"/>
+
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                                    <Label Text="{Binding TaskName}" FontSize="12"/>
+                                                    <Label Text="{Binding TaskDate}" FontSize="12"/>
+                                                </StackLayout>
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Frame>
+                        
+                    </StackLayout>
+                    
+                   <StackLayout Grid.Row="2"  HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical">
+                        <Frame HasShadow="True" HeightRequest="35" Padding="0,4,0,4">
+
+                            
+                            
+                            <!--<Button  Text="agregar"  HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" 
+                                    FontSize="20" FontAttributes="Bold" 
+                                    Clicked="TaskAdd_clicked"/>-->
+                        </Frame>
+
+                        <ActivityIndicator Color="#B4995D" IsRunning="{Binding IsRunning}" IsVisible="{Binding IsVisible}"></ActivityIndicator>
+                    </StackLayout> 
+                    
+                    
+
+                </Grid>
+                
+
+                <!--<Label Text="Registre sus datos."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+            </ScrollView>
+            <Button  Text="+" BorderColor="#2b3c3c"  
+                     FontAttributes="Bold" BackgroundColor="#4ba862" BorderRadius="35" FontSize="40" 
+                     TextColor="White" HorizontalOptions="End" WidthRequest="70" HeightRequest="70" 
+                     Margin="0,0,20,22" VerticalOptions="End" Padding="0,0,0,5" Clicked="TaskAdd_clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
